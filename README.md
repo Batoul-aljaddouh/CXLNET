@@ -12,19 +12,19 @@ Key components of the repository include:
 - **Data preprocessing**: Code for loading and preprocessing X-ray and CT images.
 - **Neural network architecture**: A custom model designed to handle image segmentation tasks.
 - **Training and evaluation**: Jupyter notebooks to train the model and evaluate its performance.
-- **Dataset split**: The dataset is divided into training and testing sets using a split configuration file (`split.pkl`).
+- **Dataset split**: The dataset is divided into training and testing sets using a split configuration file (`split.pk` and `splits_CT.pk`).
 
 ## Key Files
 
 - **`data.py`**: Contains functions for loading and preprocessing the dataset. It handles tasks like resizing images, normalizing pixel values, and augmenting the data for training.
   
-- **`ourmodel.py`**: Defines the architecture of the deep learning model used for image segmentation. It includes convolutional layers, pooling, and upsampling operations to produce accurate segmentations of X-ray and CT images.
+- **`OurModel.py`**: Defines the architecture of the deep learning model used for image segmentation. It includes convolutional layers, pooling, and upsampling operations to produce accurate segmentations of X-ray and CT images.
   
 - **`training.ipynb`**: Jupyter notebook for training the neural network model on the dataset. It contains all the necessary code to load the data, initialize the model, and start the training process, along with visualizations of training progress.
   
 - **`evaluate.ipynb`**: Jupyter notebook for evaluating the trained model on the test set. It provides performance metrics, such as accuracy, intersection over union (IoU), and visual outputs of segmented images compared to the ground truth.
   
-- **`split.pkl`**: A pickle file used to manage the dataset split. It ensures that the data is divided correctly for training and testing, allowing reproducibility of the results.
+- **`split.pk and splits_CT.pk`**: A pickle file used to manage the dataset split. It ensures that the data is divided correctly for training and testing, allowing reproducibility of the results.
 
 ## Installation
 
