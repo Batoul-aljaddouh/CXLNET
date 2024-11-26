@@ -64,6 +64,3 @@ After training, open the `evaluate.ipynb` file to assess the performance of the 
 
 The model architecture used in this project is designed to work effectively with medical images. It employs convolutional neural networks (CNNs) and uses an encoder-decoder structure with skip connections to ensure that fine-grained details are preserved in the output segmentation maps.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
